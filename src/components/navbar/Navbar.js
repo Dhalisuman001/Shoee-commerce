@@ -1,24 +1,24 @@
-import React, { Fragment } from "react";
-import { NavLink } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   return (
-    <Fragment>
+    <>
       <nav
-        class="navbar navbar-expand-lg wrapper__navbar position-relative z-2"
+        className="navbar navbar-expand-lg wrapper__navbar position-relative z-2"
         data-aos="fade-down"
         data-aos-duration="1000"
         data-aos-delay="300"
       >
-        <div class="container position-relative realtive_md-none">
-          <NavLink
+        <div className="container position-relative realtive_md-none">
+          <Link
             to="/"
-            class="navbar-brand color__black position-relative anton font__size--24 text__24-1024 text__24-sm text__24-xs"
+            className="navbar-brand color__black position-relative anton font__size--24 text__24-1024 text__24-sm text__24-xs"
           >
             Shoppes
-          </NavLink>
+          </Link>
           <button
-            class="navbar-toggler nav__button position-relative"
+            className="navbar-toggler nav__button position-relative"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -32,11 +32,11 @@ const Navbar = (props) => {
           </button>
 
           <div
-            class="collapse navbar-collapse wrapper__navbar-menu ml-lg-5"
+            className="collapse navbar-collapse wrapper__navbar-menu ml-lg-5"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav menu__center">
-              <li class="nav-item d-lg-none">
+            <ul className="navbar-nav menu__center">
+              <li className="nav-item d-lg-none">
                 <div className="wrapper__search-form">
                   <div className="d-flex align-items-center">
                     <img src="./../images/Search.png" alt="" />
@@ -48,56 +48,56 @@ const Navbar = (props) => {
                   </div>
                 </div>
               </li>
-              <li class="nav-item">
-                <NavLink
+              <li className="nav-item">
+                <Link
                   to="/"
-                  class="nav-link medium font__size--14 text__14-1024 color__black"
+                  className="nav-link medium font__size--14 text__14-1024 color__black"
                 >
                   Home
-                </NavLink>
+                </Link>
               </li>
-              <li class="nav-item">
-                <NavLink
+              <li className="nav-item">
+                <Link
                   to="/shop"
-                  class="nav-link medium font__size--14 text__14-1024 color__black"
+                  className="nav-link medium font__size--14 text__14-1024 color__black"
                 >
                   Shop
-                </NavLink>
+                </Link>
               </li>
-              <li class="nav-item">
-                <NavLink
+              <li className="nav-item">
+                <Link
                   to="/wishlist"
-                  class="nav-link medium font__size--14 text__14-1024 color__black"
+                  className="nav-link medium font__size--14 text__14-1024 color__black"
                 >
                   Collections
-                </NavLink>
+                </Link>
               </li>
-              <li class="nav-item">
-                <NavLink
+              <li className="nav-item">
+                <Link
                   to="/tracking"
-                  class="nav-link medium font__size--14 text__14-1024 color__black"
+                  className="nav-link medium font__size--14 text__14-1024 color__black"
                 >
                   Order Tracking
-                </NavLink>
+                </Link>
               </li>
-              <li class="nav-item">
-                <NavLink
+              <li className="nav-item">
+                <Link
                   to="/blog"
-                  class="nav-link medium font__size--14 text__14-1024 color__black"
+                  className="nav-link medium font__size--14 text__14-1024 color__black"
                 >
                   Blogs
-                </NavLink>
+                </Link>
               </li>
-              <li class="nav-item d-lg-none">
+              <li className="nav-item d-lg-none">
                 <a
-                  class="nav-link medium font__size--14 text__14-1024 color__black"
+                  className="nav-link medium font__size--14 text__14-1024 color__black"
                   href="/"
                   onClick={() => props.onClickCart()}
                 >
                   My Cart
                 </a>
               </li>
-              <li class="nav-item d-lg-none">
+              <li className="nav-item d-lg-none">
                 <a
                   href="#!"
                   onClick={() => props.onCLickModalLogin()}
@@ -124,8 +124,8 @@ const Navbar = (props) => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  cilprule="evenodd"
                   d="M9.78234 1.66699C14.2573 1.66699 17.8973 5.30699 17.8973 9.78199C17.8973 11.8933 17.0871 13.8189 15.7612 15.2641L18.3702 17.8676C18.6143 18.1117 18.6152 18.5067 18.371 18.7509C18.2493 18.8742 18.0885 18.9351 17.9285 18.9351C17.7693 18.9351 17.6093 18.8742 17.4868 18.7526L14.8464 16.1195C13.4574 17.2319 11.6962 17.8978 9.78234 17.8978C5.30734 17.8978 1.6665 14.257 1.6665 9.78199C1.6665 5.30699 5.30734 1.66699 9.78234 1.66699ZM9.78234 2.91699C5.9965 2.91699 2.9165 5.99616 2.9165 9.78199C2.9165 13.5678 5.9965 16.6478 9.78234 16.6478C13.5673 16.6478 16.6473 13.5678 16.6473 9.78199C16.6473 5.99616 13.5673 2.91699 9.78234 2.91699Z"
                   fill="#100D22"
                 />
@@ -171,7 +171,7 @@ const Navbar = (props) => {
           </div>
         </div>
       </nav>
-    </Fragment>
+    </>
   );
 };
 
